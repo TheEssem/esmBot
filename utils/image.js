@@ -6,7 +6,7 @@ const net = require("net");
 const fileType = require("file-type");
 const path = require("path");
 const { EventEmitter } = require("events");
-const logger = require("./logger.js");
+const logger = require("./logger");
 
 const formats = ["image/jpeg", "image/png", "image/webp", "image/gif", "video/mp4", "video/webm", "video/mov"];
 

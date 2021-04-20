@@ -1,10 +1,7 @@
-const soundPlayer = require("../../utils/soundplayer.js");
-const MusicCommand = require("../../classes/musicCommand.js");
+const SoundCommand = require("../../classes/soundCommand");
 
-class OofCommand extends MusicCommand {
-  async run() {
-    return await soundPlayer.play(this.client, "./assets/audio/oof.ogg", this.message);
-  }
+class OofCommand extends SoundCommand {
+  sound = "oof.ogg";
 
   static description = "Plays the Roblox \"oof\" sound";
   static aliases = ["roblox", "commitdie"];
